@@ -2,4 +2,49 @@
     width:100%;
     height:auto;
     background-color: #818181;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.FooterImageContainer{
+    width: 20%;
+    height: auto;
+}
+
+.FooterImageContainer2{
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.FooterImageContainer3{
+    width: 30px;
+    height: auto;
+    overflow: hidden;
+}
+
+.FooterInfoCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterInfoColLine{
+    display: flex;
+    flex-direction: row; /* Change direction to row */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+}
+
+.FooterInfoColLine span{
+    padding-left: 10px;
+}
+
+.FooterInfoColTitle{
+    padding-left: 40px;
 }
