@@ -1,27 +1,163 @@
-.Homebanner{
+.HomeBanner{
     width:100%;
     height:auto;
     background-color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
+
+.HomeBanner img{
+    width:100%;
+    height:auto;
+}
+
+
+
+/* featuredcars */
 
 .HomeFeaturedCars{
     width:100%;
     height:auto;
     background-color: white;
-    border: 2px solid black;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-.HomeTestimonials{
-    width:100%;
-    height:auto;
-    background-color: #810020;
-    border: 2px solid black;
+.HomeFeaturedCarsContent{
+    /* display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column; */
 }
+
+.HomeFeaturedCarsButtons{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    background-color: #810020;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    padding: 7px;
+}
+
+.HomeFeaturedCarsTitle{
+    color:#810020;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.HomeFeaturedCarsCards{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/*HomeTestimonials*/
+
+.HomeTestimonials{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #810020;
+    padding: 5%;
+}
+
+.HomeTestimonialsImageContainer{
+
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-left: 40px;
+}
+
+.HomeTestimonialsImage{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeTestimonialsTextContainer{
+    font-size: 24px;
+    color: white;
+    margin-left: 7%;
+    font-family: 'Dancing Script', cursive;
+    margin-right: 40px;
+}
+
+.HomeTestimonialsButtons{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    padding: 7px;
+    
+    
+}
+
+/* why us */
 
 .HomeWhyUs{
     width:100%;
     height:auto;
     background-color: white;
+    /* border: 2px solid black; */
+
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.HomeWhyUsTitle{
+    color:#810020;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.HomeWhyUsSections{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    /* padding: 5%; */
+}
+
+.HomeWhyUsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+
+    padding: 7%;
+}
+
+.HomeWhyUsSectionImageContainer{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden;
+    flex: 0 0 auto;
     border: 2px solid black;
+}
+
+.HomeWhyUsSectionImage{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeWhyUsSectionTextContainer{
+    font-size: 24px;
+    /* margin-left: 10%; */
 }
