@@ -1,13 +1,16 @@
-.HomeBanner{
+/* .HomeBanner{
     width:100%;
     height:auto;
     background-color: white;
-    /* border: 2px solid black; */
 }
 
 .HomeBanner img{
     width:100%;
     height:auto;
+} */
+
+*{
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -36,8 +39,8 @@
 }
 
 .HomeFeaturedCarsButtons{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     align-items: center;
     background-color: #810020;
     border-radius: 50%;
@@ -53,8 +56,10 @@
 
 .HomeFeaturedCarsCards{
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 /*HomeTestimonials*/

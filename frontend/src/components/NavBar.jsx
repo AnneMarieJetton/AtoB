@@ -13,7 +13,7 @@ const NavBar = () => {
                 <img src={logo}></img>
             </Link>
             <div className='NavBarLinks'>
-                <Link className='NavBarLink' to='/'>Fleet</Link>
+                <Link className='NavBarLink' to='/Fleet'>Fleet</Link>
                 <Link className='NavBarLink' to='/'>FAQ's</Link>
                 <Link className='NavBarLink' to='/'>Location</Link>
                 <Link className='NavBarLink' to='/'>Contact</Link>

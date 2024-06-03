@@ -6,6 +6,8 @@
 
     position: relative;
     overflow: hidden;
+    /* margin-left: 40px;
+    padding-right: 40px; */
 }
 
 .componentHoldingDiv{
@@ -40,11 +42,11 @@
 }
 
 .leftButton {
-    left: 10px; /* Adjust the left position as needed */
+    left: 40px; /* Adjust the left position as needed */
 }
 
 .rightButton {
-    right: 10px; /* Adjust the right position as needed */
+    right: 40px; /* Adjust the right position as needed */
 }
 
 
@@ -59,6 +61,9 @@
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
+
+    
+    /* font-size: 30px; */
 }
 
 .HomeTestimonialsImageContainer{
@@ -79,7 +84,8 @@
 }
 
 .HomeTestimonialsTextContainer{
-    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+    font-size: 34px;
     color: white;
     margin-left: 7%;
     font-family: 'Dancing Script', cursive;
