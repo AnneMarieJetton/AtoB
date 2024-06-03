@@ -1,0 +1,87 @@
+.parentDiv{
+    background-color: aliceblue;
+    width: auto;
+    /* height: 500px; */
+    height: auto;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.componentHoldingDiv{
+    display: flex;
+    transition: transform 0.5s ease;
+
+    position: relative;
+    z-index: 1;
+}
+
+.dummy1{
+    background-color: aqua;
+    flex: 0 0 100%;
+}
+
+.dummy2{
+    background-color: rebeccapurple;
+    flex: 0 0 100%;
+}
+
+.slideButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make the button round */
+    background-color: white; /* Set background color to white */
+    z-index: 2; /* Ensure the buttons are above the testimonials */
+    padding: 10px;
+}
+
+.leftButton {
+    left: 10px; /* Adjust the left position as needed */
+}
+
+.rightButton {
+    right: 10px; /* Adjust the right position as needed */
+}
+
+
+/* --------------------------------- */
+
+.HomeTestimonials{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #810020;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.HomeTestimonialsImageContainer{
+
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-left: 40px;
+}
+
+.HomeTestimonialsImage{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeTestimonialsTextContainer{
+    font-size: 24px;
+    color: white;
+    margin-left: 7%;
+    font-family: 'Dancing Script', cursive;
+    margin-right: 40px;
+}

@@ -13,30 +13,56 @@ import rightArrow from '../assets/right_arrow.png';
 import smileIcon from '../assets/smile_transparent.png';
 
 const Banner = () => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = [
-        carStock,
-        carStock,
-        carStock,
-        carStock,
-    ];
+    const [imageIndex, setImageIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            // Cycle through images
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Change image every 5 seconds
+    const [images, setImages] = useState([
+        carStock,
+        womanStock,
+        carStock,
+        womanStock,
+        carStock,
+        womanStock,
+        carStock,
+        womanStock,
+    ]);
 
-        return () => clearInterval(interval); // Clear interval on component unmount
-    }, [images.length]);
+    function showNextImage(){
+        setImageIndex(index => {
+            if(index === images.length - 1) return 0
+            return index + 1
+        })
+    }
+
+    function showPreviousImage(){
+
+        setImageIndex(index => {
+            if(index === 0) return images.length - 1
+            return index - 1
+        })
+    }
 
     return (
+
+
         <div className='HomeBanner'>
-            {images.map((image, index) => (
-                <div key={index} className={`slide ${index === currentImageIndex ? 'active' : ''}`}>
-                    <img src={image} alt={`Slide ${index + 1}`} />
-                </div>
-            ))}
+
+            <div className='HomeBannerImgContainer'>
+                {images.map(url => (
+                    <img 
+                    key={url} 
+                    src={url} 
+                    className='HomeBannerImg'
+                    style={{ translate: `${-100 * imageIndex}%` }}
+                    />
+                ))}
+            </div>
+
+            <button onClick={showPreviousImage} className='HomeBannerButtonLeft'>
+                LEFT
+            </button>
+            <button onClick={showNextImage} className='HomeBannerButtonRight'>
+                Right
+            </button>
         </div>
     )
 }

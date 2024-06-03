@@ -59,12 +59,13 @@
 
 /*HomeTestimonials*/
 
-.HomeTestimonials{
+/* .HomeTestimonials{
     display: flex;
     justify-content: space-between; 
     align-items: center;
     background-color: #810020;
-    padding: 5%;
+    padding: 10%;
+    width: 100%;
 }
 
 .HomeTestimonialsImageContainer{
@@ -102,7 +103,7 @@
     padding: 7px;
     
     
-}
+} */
 
 /* why us */
 
