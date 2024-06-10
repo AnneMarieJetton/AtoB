@@ -17,7 +17,7 @@ const Footer = () => {
                 <img src={logo}></img>
             </div>
             <div className='FooterInfoCol'>
-                <span className='FooterInfoColTitle'>Title</span>
+                <span className='FooterInfoColTitle'>Contact Us</span>
                 <div className='FooterInfoColLine'>
                     <div>
                         <img className='FooterImageContainer3' src={emailIcon}></img>
@@ -43,19 +43,20 @@ const Footer = () => {
                     <span>Mon - Sat, 9am-7pm</span>
                 </div>
             </div>
-            <div className='FooterInfoCol'>
-                <span className='FooterInfoColTitle'>Title</span>
+            <div className='FooterInfoCol2'>
+            {/* <div className='FooterInfoColAligner'> */}
+                <span className='FooterInfoColTitle'>Social Media</span>
                 <div className='FooterInfoColLine'>
                     <div>
                         <img className='FooterImageContainer3' src={facebookIcon}></img>
                     </div>
-                    <span>Facebook Link</span>
+                    <span>https://www.facebook.com/</span>
                 </div>
                 <div className='FooterInfoColLine'>
                     <div>
                         <img className='FooterImageContainer3' src={instagramIcon}></img>
                     </div>
-                    <span>Instagram Link</span>
+                    <span>https://www.instagram.com/</span>
                 </div>
                 <div className='FooterInfoColLine'>
                     <div>
@@ -70,6 +71,7 @@ const Footer = () => {
                     <span></span>
                 </div>
             </div>
+            {/* </div> */}
             <div className='FooterImageContainer2'>
                 <img src={airportMap}></img>
             </div>

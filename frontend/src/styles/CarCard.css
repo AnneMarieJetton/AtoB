@@ -33,4 +33,8 @@
     color: white;
 
     align-self: flex-end;
+
+    font-size: 1vw;
+    /* width: 60%;
+    height: 5%; */
 }

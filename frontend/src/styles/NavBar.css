@@ -10,6 +10,8 @@
     padding-right: 40px;
     padding: 5px;
     font-size: 24px;
+
+    position: relative;
 }
 
 .NavBarLogo{
@@ -18,7 +20,7 @@
     /* margin-right: 110px; */
 }
 
-.NavbarLinks{
+.NavBarLinks{
     flex: 1; 
     display: flex;
     justify-content: center;
@@ -38,4 +40,61 @@
     border-radius: 24px;
     border: 2px solid black;
     color: white;
+}
+
+.NavBarLinksHamburger {
+    display: none; 
+}
+
+@media screen and (max-width: 1200px){
+    .NavBarButton {
+        display: none; 
+    }
+
+    .NavBarLinks {
+        display: none; /* initially hide the links */
+        position: absolute;
+        top: 100%; /* position it just below the navbar */
+        left: 0;
+        background-color: #ececec;
+        width: 100%;
+        /* padding: 10px; */
+        flex-direction: column; /* align links vertically */
+        z-index: 2; /* ensure it appears above other content */
+    }
+
+    .NavBarLinks.open{
+
+        display: flex;
+    }
+
+    .NavBarLinks.closed {
+        display: none; /* Change display to none when closed */
+    }
+
+    .NavBarLinksHamburger {
+        display: flex;
+        width: 3%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .NavBarLinksHamburger {
+        display: flex; 
+        width: 3%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .NavBarLink{
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+
+    .NavBarLink:hover{
+        background-color: #d6d6d6;
+    }
 }

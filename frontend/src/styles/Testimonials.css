@@ -8,6 +8,8 @@
     overflow: hidden;
     /* margin-left: 40px;
     padding-right: 40px; */
+
+    font-size: 1.25vw;
 }
 
 .componentHoldingDiv{
@@ -68,8 +70,10 @@
 
 .HomeTestimonialsImageContainer{
 
-    width: 200px; 
-    height: 200px;
+    /* width: 200px; 
+    height: 200px; */
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%; 
     overflow: hidden;
     flex: 0 0 auto;
@@ -85,9 +89,53 @@
 
 .HomeTestimonialsTextContainer{
     font-family: "Dancing Script", cursive;
-    font-size: 34px;
+    /* font-size: 34px; */
     color: white;
     margin-left: 7%;
     font-family: 'Dancing Script', cursive;
     margin-right: 40px;
+}
+
+@media screen and (max-width: 500px){
+    .HomeTestimonials{
+        flex-direction: column;
+    }
+
+    .parentDiv{
+        font-size: 7vw;
+    }
+
+    .HomeTestimonialsImageContainer{
+        margin: 0px;
+        margin-top: 10px;
+
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .slideButton {
+        /* position: absolute; */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+        width: 20px; /* Adjust as needed */
+        height: 20px; /* Adjust as needed */
+        border: none; /* Remove border */
+        border-radius: 50%; /* Make the button round */
+        background-color: white; /* Set background color to white */
+        z-index: 2; /* Ensure the buttons are above the testimonials */
+        padding: 0px;
+    }
+
+    .HomeTestimonialsTextContainer{
+        margin: 20px;
+    }
+
+    .leftButton {
+        left: 10px; /* Adjust the left position as needed */
+    }
+    
+    .rightButton {
+        right: 10px; /* Adjust the right position as needed */
+    }
+
 }

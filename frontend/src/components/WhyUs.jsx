@@ -5,7 +5,8 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import CarCard from '../components/CarCard';
 
-import '../styles/Home.css';
+// import '../styles/Home.css';
+import '../styles/WhyUs.css';
 import carStock from '../assets/AtoB_car_stock.png';
 import womanStock from '../assets/woman_stock_photo.jpg';
 import leftArrow from '../assets/left_arrow.png';
