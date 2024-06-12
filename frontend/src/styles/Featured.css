@@ -1,0 +1,80 @@
+/* featuredcars */
+
+.HomeFeaturedCars{
+    width:100%;
+    height:auto;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.HomeFeaturedCarsContent{
+    /* display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column; */
+}
+
+.HomeFeaturedCarsButtons{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    background-color: #810020;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    padding: 7px;
+}
+
+.HomeFeaturedCarsTitle{
+    color:#810020;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.HomeFeaturedCarsCards{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.HomeFeaturedCarsCardsMobile{
+    display: none;
+    justify-content: center; 
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .HomeFeaturedCarsTitle{
+        font-size: 5vw;
+    }
+
+    .HomeFeaturedCarsButtons{
+        display: none;
+    }
+
+    .HomeFeaturedCarsCards{
+        display: none;
+    }
+
+    .HomeFeaturedCarsCardsMobile{
+        display: flex;
+        /* margin-bottom: 20px; */
+    }
+
+    .HomeFeaturedCars{
+        /* margin-bottom: 20px; */
+        padding: 20px;
+    }
+    
+}

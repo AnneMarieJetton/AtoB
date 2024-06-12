@@ -21,7 +21,7 @@
 
 /* featuredcars */
 
-.HomeFeaturedCars{
+/* .HomeFeaturedCars{
     width:100%;
     height:auto;
     background-color: white;
@@ -36,10 +36,6 @@
 }
 
 .HomeFeaturedCarsContent{
-    /* display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    flex-direction: column; */
 }
 
 .HomeFeaturedCarsButtons{
@@ -62,12 +58,7 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    /* padding-left: 70px;
-    padding-right: 70px; */
-
-    /* padding-left: 10%;
-    padding-right: 10%; */
-}
+} */
 
 /*HomeTestimonials*/
 

@@ -71,6 +71,8 @@ const Banner = () => {
             <div className='HomeBookingWidget'>
                 <span className="HomeBookingWidgetTitle">Provo's Local Car Rental</span>
                 <span className="HomeBookingWidgetTitle2">Text and Stuff</span>
+
+                {/* desktop */}
                 <div className='HomeBookingWidgetInfobox'>
                     <div className='HomeBookingWidgetInfoBoxSection'>
                         <span className='HomeBookingWidgetInfoboxSectionLabel'>PICK UP LOCATION</span>
@@ -93,6 +95,35 @@ const Banner = () => {
                         <div className='HomeBookingWidgetInfoboxSectionInputButton'>Book Now</div>
                     </div>
                 </div>
+
+                {/* mobile */}
+                <div className='HomeBookingWidgetInfoboxMobile'>
+                    {/* <div className='HomeBookingWidgetInfoboxMobileRow'> */}
+                        <div className='HomeBookingWidgetInfoBoxSection'>
+                            <span className='HomeBookingWidgetInfoboxSectionLabel'>PICK UP LOCATION</span>
+                            <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
+                        </div>
+                        <div className='HomeBookingWidgetInfoBoxSection'>
+                            <span className='HomeBookingWidgetInfoboxSectionLabel'>FROM</span>
+                            <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
+                        </div>
+                    {/* </div> */}
+                    {/* <div className='HomeBookingWidgetInfoboxMobileRow'> */}
+                        <div className='HomeBookingWidgetInfoBoxSection'>
+                            <span className='HomeBookingWidgetInfoboxSectionLabel'>RETURN LOCATION</span>
+                            <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
+                        </div>
+                        <div className='HomeBookingWidgetInfoBoxSection'>
+                            <span className='HomeBookingWidgetInfoboxSectionLabel'>UNTIL</span>
+                            <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
+                        </div>
+                    {/* </div> */}
+                    <div className='HomeBookingWidgetInfoBoxSection'>
+                        {/* <span className='HomeBookingWidgetInfoboxSectionButtonLabel'></span> */}
+                        <div className='HomeBookingWidgetInfoboxSectionInputButton'>Book Now</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
