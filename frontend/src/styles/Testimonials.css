@@ -34,8 +34,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
     border: none; /* Remove border */
     border-radius: 50%; /* Make the button round */
     background-color: white; /* Set background color to white */

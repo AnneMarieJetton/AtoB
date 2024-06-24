@@ -2,7 +2,12 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
+    height: 90vh;
+    min-height: 90vh;
+    /* height: auto; */
+
+    /* font-size: 2vw; */
 }
 
 .HomeBannerImgContainer{
@@ -52,6 +57,12 @@
 
 /* ------------------------------------ */
 
+/* .HomeBannerContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+} */
+
 .HomeBookingWidget{
     z-index: 2;
     /* background-color: rgba(255, 190, 190, 0.5); */
@@ -60,18 +71,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    z-index: 1; /* Higher z-index */
+    transform: translate(-50%, -50%);
+    z-index: 1;
 
     display: flex;
     flex-direction: column;
 
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .HomeBookingWidgetTitle{
     font-size: 50px;
+    /* font-size: 5vw; */
     font-weight: bolder;
     margin-bottom: 10px;
     color: white;
@@ -83,6 +95,7 @@
 
 .HomeBookingWidgetTitle2{
     font-size: 24px;
+    /* font-size: 2vw; */
     /* font-weight: bold; */
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.788);
@@ -94,9 +107,11 @@
 
 .HomeBookingWidgetInfobox {
     background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
-    padding: 20px; /* Add padding for better readability */
+    /* padding: 20px; */
+    padding: 2%;
     border-radius: 10px;
-    margin: 20px;
+    /* margin: 20px; */
+    /* margin: 5%; */
 
     display: flex;
     justify-content: space-between; 
@@ -119,13 +134,16 @@
     flex-direction: column;
     width: 100%;
     margin: 20px;
-    margin-bottom: 30px;
+    /* margin: 5%; */
+    /* margin-bottom: 30px; */
 }
 
 .HomeBookingWidgetInfoboxSectionLabel{
     color: black;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1vw;
     width: 100%;
+    white-space: nowrap;
 }
 
 .HomeBookingWidgetInfoboxSectionInput{
@@ -135,39 +153,151 @@
     width: 100%;
     font-size: 20px;
     padding: 5px;
+
+    font-size: 1vw;
 }
 
 .HomeBookingWidgetInfoboxSectionInputButton{
     background-color: #810020;
     color: white;
     border-radius: 5px;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1vw;
     padding: 5px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 1.5vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 500px){
-    .HomeBookingWidgetInfoboxMobile{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .HomeBookingWidgetInfoboxMobileRow{
-        /* background-color: rgba(255, 255, 255, 0.7); */
-        padding: 20px; /* Add padding for better readability */
-        border-radius: 10px;
-        margin: 20px;
-
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-    }
+@media screen and (max-width: 750px){
 
     .HomeBookingWidgetInfobox{
         display: none;
     }
+
+    .HomeBookingWidgetInfoboxMobile{
+        display: block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .HomeBanner {
+        height: 95vh;
+    }
+
+    .HomeBookingWidgetTitle{
+        font-size: 5vw;
+    }
+    
+    .HomeBookingWidgetTitle2{
+        font-size: 2vw;
+    }
+    
+
+    .HomeBookingWidgetInfobox{
+        /* display: flex; */
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    .HomeBookingWidgetInfoboxSectionLabel{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .HomeBookingWidgetInfoboxSectionInput{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .HomeBookingWidgetInfoBoxButtonSection{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        margin: 8px;
+    }
+
+    .HomeBookingWidgetInfoboxSectionInputButton{
+        font-size: 3vw;
+        font-weight: bold;
+        width: 100%;
+
+
+        background-color: #810020;
+        color: white;
+        border-radius: 5px;
+        /* font-size: 20px; */
+        font-size: 3vw;
+        padding: 5px;
+        /* margin-top: 30px; */
+        margin-top: 1.5vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .HomeBookingWidgetInfoBoxSection{
+        margin: 8px;
+        /* padding: 0px; */
+    }
+
+    .HomeBookingWidgetInfoboxMobileRow{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 250px){
+
+    .HomeBanner {
+        height: 95vh;
+    }
+
+    .HomeBookingWidgetInfoboxMobile{
+        display: none;
+    }
+
+    .HomeBookingWidgetTitle{
+        font-size: 6.8vw;
+    }
+    
+    .HomeBookingWidgetTitle2{
+        font-size: 3.8vw;
+    }
+    
+
+    .HomeBookingWidgetInfobox{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    .HomeBookingWidgetInfoboxSectionLabel{
+        font-size: 3.8vw;
+        font-weight: bold;
+    }
+
+    .HomeBookingWidgetInfoboxSectionInput{
+        font-size: 3.8vw;
+        font-weight: bold;
+    }
+
+    .HomeBookingWidgetInfoboxSectionInputButton{
+        font-size: 3.8vw;
+        font-weight: bold;
+        /* width: 100%; */
+    }
+
+    .HomeBookingWidgetInfoBoxSection{
+        margin: 6px;
+        /* padding: 0px; */
+    }
+
 }

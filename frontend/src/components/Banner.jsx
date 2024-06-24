@@ -50,6 +50,8 @@ const Banner = () => {
 
     return (
         <div className='HomeBanner'>
+
+            {/* <div className='HomeBannerContainer'> */}
             <div className='HomeBannerImgContainer'>
                 {images.map(url => (
                     <img 
@@ -61,13 +63,7 @@ const Banner = () => {
                 ))}
             </div>
 
-            {/* <button onClick={showPreviousImage} className='HomeBannerButtonLeft'>
-                LEFT
-            </button>
-            <button onClick={showNextImage} className='HomeBannerButtonRight'>
-                Right
-            </button> */}
-
+            {/* <div className='CenterHomeBookingWidget'> */}
             <div className='HomeBookingWidget'>
                 <span className="HomeBookingWidgetTitle">Provo's Local Car Rental</span>
                 <span className="HomeBookingWidgetTitle2">Text and Stuff</span>
@@ -98,7 +94,7 @@ const Banner = () => {
 
                 {/* mobile */}
                 <div className='HomeBookingWidgetInfoboxMobile'>
-                    {/* <div className='HomeBookingWidgetInfoboxMobileRow'> */}
+                    <div className='HomeBookingWidgetInfoboxMobileRow'>
                         <div className='HomeBookingWidgetInfoBoxSection'>
                             <span className='HomeBookingWidgetInfoboxSectionLabel'>PICK UP LOCATION</span>
                             <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
@@ -107,8 +103,8 @@ const Banner = () => {
                             <span className='HomeBookingWidgetInfoboxSectionLabel'>FROM</span>
                             <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
                         </div>
-                    {/* </div> */}
-                    {/* <div className='HomeBookingWidgetInfoboxMobileRow'> */}
+                    </div>
+                    <div className='HomeBookingWidgetInfoboxMobileRow'>
                         <div className='HomeBookingWidgetInfoBoxSection'>
                             <span className='HomeBookingWidgetInfoboxSectionLabel'>RETURN LOCATION</span>
                             <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
@@ -117,14 +113,14 @@ const Banner = () => {
                             <span className='HomeBookingWidgetInfoboxSectionLabel'>UNTIL</span>
                             <div className='HomeBookingWidgetInfoboxSectionInput'>text</div>
                         </div>
-                    {/* </div> */}
-                    <div className='HomeBookingWidgetInfoBoxSection'>
-                        {/* <span className='HomeBookingWidgetInfoboxSectionButtonLabel'></span> */}
+                    </div>
+                    <div className='HomeBookingWidgetInfoBoxButtonSection'>
                         <div className='HomeBookingWidgetInfoboxSectionInputButton'>Book Now</div>
                     </div>
                 </div>
 
             </div>
+            {/* </div> */}
         </div>
     )
 }
