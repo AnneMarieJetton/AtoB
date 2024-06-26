@@ -11,6 +11,7 @@ import carStock2 from '../assets/carStock2.jpg';
 import carStock3 from '../assets/carStock3.jpg';
 import carStock4 from '../assets/carStock4.jpg';
 import carStock5 from '../assets/carStock5.jpg';
+import carStock6 from '../assets/yaris_adjusted.png'
 import womanStock from '../assets/woman_stock_photo.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
@@ -20,6 +21,7 @@ const Banner = () => {
     const [imageIndex, setImageIndex] = useState(0);
 
     const [images, setImages] = useState([
+        carStock6,
         carStock,
         carStock2,
         carStock3,
@@ -65,8 +67,8 @@ const Banner = () => {
 
             {/* <div className='CenterHomeBookingWidget'> */}
             <div className='HomeBookingWidget'>
-                <span className="HomeBookingWidgetTitle">Provo's Local Car Rental</span>
-                <span className="HomeBookingWidgetTitle2">Text and Stuff</span>
+                <span className="HomeBookingWidgetTitle">Fast and easy car rental at the Provo Airport</span>
+                <span className="HomeBookingWidgetTitle2">Give us a call at (801)-477-5067</span>
 
                 {/* desktop */}
                 <div className='HomeBookingWidgetInfobox'>

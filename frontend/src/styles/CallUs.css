@@ -1,0 +1,15 @@
+.CallUs{
+    width: 100%;
+    height: auto;
+    /* background-color: #810020; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 300px){
+    .CallUs{
+        font-size: 5vw;
+    }
+}

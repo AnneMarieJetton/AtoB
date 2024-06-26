@@ -7,54 +7,77 @@ import womanStock from '../assets/woman_stock_photo.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const Testimonials = () => {
     const [divIndex, setDivIndex] = useState(0);
 
     const [testimonials] = useState([
         {
             imageSrc: womanStock,
-            text: "We would put a review here from a customer. Ideally, here is where I would use the cursive script, as it implies spoken words. thsjd aoedf  fjalkdf  fnls fjs suef  fjfoak  fjiea ndkns jfg fjajkd ajer lgf  fjapei  fjd fj  teija dd fjeiieifalmd fjijei a her skdjfn  fnaejfn  jfdnfsk fgn fknsfe  kfsl ndland fnfale kfueakf aefbdk lgg asajef a fnejsnf."
+            text: "It was so convenient to get off the plane and walk directly to the car. I was so happy to pass the lines of people waiting to rent their car. I will definitely rent from A to B again."
         },
         {
             imageSrc: womanStock,
-            text: "We would put a review here from a customer. Ideally, here is where I would use the cursive script, as it implies spoken words. thsjd aoedf  fjalkdf  fnls fjs suef  fjfoak  fjiea ndkns jfg fjajkd ajer lgf  fjapei  fjd fj  teija dd fjeiieifalmd fjijei a her skdjfn  fnaejfn  jfdnfsk fgn fknsfe  kfsl ndland fnfale kfueakf aefbdk lgg asajef a fnejsnf."
+            text: "Great local rentals! Responsive, flexible and great people to work with! I highly recommend this local rental car company!"
         },
         {
             imageSrc: womanStock,
-            text: "We would put a review here from a customer. Ideally, here is where I would use the cursive script, as it implies spoken words. thsjd aoedf  fjalkdf  fnls fjs suef  fjfoak  fjiea ndkns jfg fjajkd ajer lgf  fjapei  fjd fj  teija dd fjeiieifalmd fjijei a her skdjfn  fnaejfn  jfdnfsk fgn fknsfe  kfsl ndland fnfale kfueakf aefbdk lgg asajef a fnejsnf."
-        },
-        {
-            imageSrc: womanStock,
-            text: "We would put a review here from a customer. Ideally, here is where I would use the cursive script, as it implies spoken words. thsjd aoedf  fjalkdf  fnls fjs suef  fjfoak  fjiea ndkns jfg fjajkd ajer lgf  fjapei  fjd fj  teija dd fjeiieifalmd fjijei a her skdjfn  fnaejfn  jfdnfsk fgn fknsfe  kfsl ndland fnfale kfueakf aefbdk lgg asajef a fnejsnf."
+            text: "A to B rentals has been one of my favorite rental companies to work with, and I do quite a bit of traveling for work. I thoroughly appreciated the attention they gave with individual messages and phone calls. They were inexpensive and helped supply car seats. Cars were clean and the whole experience was very smooth and easy. Highly recommend."
         },
     ]);
 
-    function SlideLeft(){
-        setDivIndex(prevIndex => {
-            // Check if divIndex is already at 0, then set it to the last index
-            if (prevIndex === 0) {
-                return testimonials.length - 1;
-            } else {
-                return prevIndex - 1;
-            }
-        });
-    }
+    // function SlideLeft(){
+    //     setDivIndex(prevIndex => {
+    //         // Check if divIndex is already at 0, then set it to the last index
+    //         if (prevIndex === 0) {
+    //             return testimonials.length - 1;
+    //         } else {
+    //             return prevIndex - 1;
+    //         }
+    //     });
+    // }
 
-    function SlideRight(){
-        setDivIndex(prevIndex => {
-            // Check if divIndex is already at the last index, then set it to 0
-            if (prevIndex === testimonials.length - 1) {
-                return 0;
-            } else {
-                return prevIndex + 1;
-            }
-        });
-    }
+    // function SlideRight(){
+    //     setDivIndex(prevIndex => {
+    //         // Check if divIndex is already at the last index, then set it to 0
+    //         if (prevIndex === testimonials.length - 1) {
+    //             return 0;
+    //         } else {
+    //             return prevIndex + 1;
+    //         }
+    //     });
+    // }
+
+    const responsive = {
+        superLargeDesktop: {
+          breakpoint: { max: 4000, min: 3000 },
+          items: 1
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 1
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 1
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
 
     return(
-        <div className='parentDiv'>
-            <div className='componentHoldingDiv' style={{ transform: `translateX(${divIndex * -100}%)` }}>
-                {testimonials.map((testimonial, index) => (
+
+        <Carousel 
+        responsive={responsive}
+        swipeable={true}
+        draggable={false}
+        infinite={true}
+        >
+            {testimonials.map((testimonial, index) => (
                     <div className='dummy1'>
                         <Testimonial 
                             key={index} 
@@ -63,15 +86,29 @@ const Testimonials = () => {
                         />
                     </div>
                 ))}
-            </div>
+        </Carousel>
 
-            <button className="slideButton leftButton" style={{ paddingRight: '15px' }} onClick={SlideLeft}>
-                <img src={leftArrow}></img>
-            </button>
-            <button className="slideButton rightButton" style={{ paddingLeft: '15px' }} onClick={SlideRight}>
-                <img src={rightArrow}></img>
-            </button>
-        </div>
+
+        // <div className='parentDiv'>
+        //     <div className='componentHoldingDiv' style={{ transform: `translateX(${divIndex * -100}%)` }}>
+        //         {testimonials.map((testimonial, index) => (
+        //             <div className='dummy1'>
+        //                 <Testimonial 
+        //                     key={index} 
+        //                     imageSrc={testimonial.imageSrc} 
+        //                     text={testimonial.text}
+        //                 />
+        //             </div>
+        //         ))}
+        //     </div>
+
+        //     <button className="slideButton leftButton" onClick={SlideLeft}>
+        //         &lt;
+        //     </button>
+        //     <button className="slideButton rightButton" onClick={SlideRight}>
+        //         &gt;
+        //     </button>
+        // </div>
     );
 }
 

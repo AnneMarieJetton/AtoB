@@ -9,6 +9,7 @@ import Featured from '../components/Featured';
 import Banner from '../components/Banner';
 import Testimonials from '../components/Testimonials';
 import WhyUs from '../components/WhyUs';
+import CallUs from '../components/CallUs'
 
 import '../styles/Home.css';
 import carStock from '../assets/AtoB_car_stock.png';
@@ -21,6 +22,8 @@ const Home = () => {
     return (
         <div className='Home'>
             <NavBar />
+
+            <CallUs />
 
             {/* banner */}
             <Banner/>

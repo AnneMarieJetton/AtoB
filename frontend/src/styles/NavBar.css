@@ -47,7 +47,7 @@
     display: none; 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 850px){
     .NavBarButton {
         display: none; 
     }
@@ -57,7 +57,7 @@
         position: absolute;
         top: 100%; /* position it just below the navbar */
         left: 0;
-        background-color: #ececec;
+        background-color: #a7a7a7;
         width: 100%;
         /* padding: 10px; */
         flex-direction: column; /* align links vertically */
@@ -65,7 +65,6 @@
     }
 
     .NavBarLinks.open{
-
         display: flex;
     }
 
@@ -90,9 +89,11 @@
     .NavBarLink{
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         margin: 0px;
+        font-size: 3vw;
+        text-align: center;
     }
 
     .NavBarLink:hover{
