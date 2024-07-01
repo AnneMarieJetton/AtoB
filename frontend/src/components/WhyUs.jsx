@@ -22,27 +22,30 @@ const WhyUs = () => {
                     <div className='HomeWhyUsSectionImageContainer'>
                         <img className='HomeWhyUsSectionImage' src={smileIcon}></img>
                     </div>
-                    <span className='HomeWhyUsTitle'>Affordable</span>
+                    <span className='HomeWhyUsTitle'>Easy</span>
                     <div className='HomeWhyUsSectionTextContainer'>
-                        More text here about it skjdf nkauejn nfafj jnfe fn afna jeneafe fnakufeh af fa
+                        {/* We guarantee the easiest pickup and drop off process in the industry */}
+                        We guarantee the easiest pickup and drop off process in the industry 
                     </div>
                 </div>
                 <div className='HomeWhyUsSection'>
                     <div className='HomeWhyUsSectionImageContainer'>
                         <img className='HomeWhyUsSectionImage' src={smileIcon}></img>
                     </div>
-                    <span className='HomeWhyUsTitle'>Local</span>
+                    <span className='HomeWhyUsTitle'>Personable</span>
                     <div className='HomeWhyUsSectionTextContainer'>
-                        More text here about it skjdf nkauejn nfafj jnfe fn afna jeneafe fnakufeh af fa
+                        {/* Every reservation is handled by a human. No clicking keys through robot menus and no re-routed calls to any call centers. */}
+                        Every reservation is handled by a human. No clicking keys through robot menus and no re-routed calls to any call centers.
                     </div>
                 </div>
                 <div className='HomeWhyUsSection'>
                     <div className='HomeWhyUsSectionImageContainer'>
                         <img className='HomeWhyUsSectionImage' src={smileIcon}></img>
                     </div>
-                    <span className='HomeWhyUsTitle'>Hassle-Free</span>
+                    <span className='HomeWhyUsTitle'>Quality</span>
                     <div className='HomeWhyUsSectionTextContainer'>
-                        More text here about it skjdf nkauejn nfafj jnfe fn afna jeneafe fnakufeh af fa
+                        {/* Each vehicle on our fleet is hand selected and strictly maintained. You can look forward to a safe and comfortable trip.  */}
+                        Each vehicle on our fleet is hand selected and strictly maintained. You can look forward to a safe and comfortable trip.
                     </div>
                 </div>
             </div>

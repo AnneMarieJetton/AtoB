@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Testimonial from './Testimonial';
 
 import '../styles/Testimonials.css';
-import womanStock from '../assets/woman_stock_photo.jpg';
+import personStock1 from '../assets/personStock1.jpg';
+import personStock2 from '../assets/personStock2.jpg';
+import personStock3 from '../assets/personStock3.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 
@@ -15,15 +17,15 @@ const Testimonials = () => {
 
     const [testimonials] = useState([
         {
-            imageSrc: womanStock,
+            imageSrc: personStock3,
             text: "It was so convenient to get off the plane and walk directly to the car. I was so happy to pass the lines of people waiting to rent their car. I will definitely rent from A to B again."
         },
         {
-            imageSrc: womanStock,
+            imageSrc: personStock2,
             text: "Great local rentals! Responsive, flexible and great people to work with! I highly recommend this local rental car company!"
         },
         {
-            imageSrc: womanStock,
+            imageSrc: personStock1,
             text: "A to B rentals has been one of my favorite rental companies to work with, and I do quite a bit of traveling for work. I thoroughly appreciated the attention they gave with individual messages and phone calls. They were inexpensive and helped supply car seats. Cars were clean and the whole experience was very smooth and easy. Highly recommend."
         },
     ]);

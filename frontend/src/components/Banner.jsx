@@ -11,23 +11,49 @@ import carStock2 from '../assets/carStock2.jpg';
 import carStock3 from '../assets/carStock3.jpg';
 import carStock4 from '../assets/carStock4.jpg';
 import carStock5 from '../assets/carStock5.jpg';
-import carStock6 from '../assets/yaris_adjusted.png'
+import AtoBCar1 from '../assets/AtoBCar1.jpg';
+import AtoBCar2 from '../assets/AtoBCar2.png';
+import AtoBCar3 from '../assets/yaris_adjusted.png';
 import womanStock from '../assets/woman_stock_photo.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 import smileIcon from '../assets/smile_transparent.png';
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const Banner = () => {
     const [imageIndex, setImageIndex] = useState(0);
 
     const [images, setImages] = useState([
-        carStock6,
+        AtoBCar1,
+        AtoBCar2,
+        AtoBCar3,
         carStock,
         carStock2,
         carStock3,
         carStock4,
         carStock5,
     ]);
+
+    // const responsive = {
+    //     superLargeDesktop: {
+    //       breakpoint: { max: 4000, min: 3000 },
+    //       items: 1
+    //     },
+    //     desktop: {
+    //       breakpoint: { max: 3000, min: 1024 },
+    //       items: 1
+    //     },
+    //     tablet: {
+    //       breakpoint: { max: 1024, min: 464 },
+    //       items: 1
+    //     },
+    //     mobile: {
+    //       breakpoint: { max: 464, min: 0 },
+    //       items: 1
+    //     }
+    //   };
 
     useEffect(() => {
         const intervalId = setInterval(showNextImage, 5000); // Set interval to switch image every 3 seconds
