@@ -18,15 +18,15 @@ const Testimonials = () => {
     const [testimonials] = useState([
         {
             imageSrc: personStock3,
-            text: "It was so convenient to get off the plane and walk directly to the car. I was so happy to pass the lines of people waiting to rent their car. I will definitely rent from A to B again."
+            text: "\"It was so convenient to get off the plane and walk directly to the car. I was so happy to pass the lines of people waiting to rent their car. I will definitely rent from A to B again.\""
         },
         {
             imageSrc: personStock2,
-            text: "Great local rentals! Responsive, flexible and great people to work with! I highly recommend this local rental car company!"
+            text: "\"Great local rentals! Responsive, flexible and great people to work with! I highly recommend this local rental car company!\""
         },
         {
             imageSrc: personStock1,
-            text: "A to B rentals has been one of my favorite rental companies to work with, and I do quite a bit of traveling for work. I thoroughly appreciated the attention they gave with individual messages and phone calls. They were inexpensive and helped supply car seats. Cars were clean and the whole experience was very smooth and easy. Highly recommend."
+            text: "\"A to B rentals has been one of my favorite rental companies to work with, and I do quite a bit of traveling for work. I thoroughly appreciated the attention they gave with individual messages and phone calls. They were inexpensive and helped supply car seats. Cars were clean and the whole experience was very smooth and easy. Highly recommend.\""
         },
     ]);
 

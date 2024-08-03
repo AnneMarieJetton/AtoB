@@ -54,8 +54,13 @@
     padding-left: 10px;
 }
 
+.FooterInfoColLine span a{
+    text-decoration: underline;
+}
+
 .FooterInfoColTitle{
     padding-left: 40px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 500px){

@@ -8,7 +8,7 @@ import CarCard from '../components/CarCard';
 // import '../styles/Home.css';
 import '../styles/Featured.css';
 import carStock from '../assets/AtoB_car_stock.png';
-import womanStock from '../assets/woman_stock_photo.jpg';
+import womanStock from '../assets/personStock1.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 import smileIcon from '../assets/smile_transparent.png';
@@ -26,15 +26,15 @@ const Featured = () => {
           items: 3
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
+          breakpoint: { max: 3000, min: 1000 },
           items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 1000, min: 500 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 500, min: 0 },
           items: 1
         }
       };

@@ -9,11 +9,12 @@ import Featured from '../components/Featured';
 import Banner from '../components/Banner';
 import Testimonials from '../components/Testimonials';
 import WhyUs from '../components/WhyUs';
-import CallUs from '../components/CallUs'
+import CallUs from '../components/CallUs';
+import HQBookingWidget from '../components/HQBookingWidget';
 
 import '../styles/Home.css';
 import carStock from '../assets/AtoB_car_stock.png';
-import womanStock from '../assets/woman_stock_photo.jpg';
+import womanStock from '../assets/personStock1.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 import smileIcon from '../assets/smile_transparent.png';
@@ -21,23 +22,26 @@ import smileIcon from '../assets/smile_transparent.png';
 const Home = () => {
     return (
         <div className='Home'>
-            <NavBar />
 
-            <CallUs />
+            <HQBookingWidget/>
+
+            {/* <NavBar /> */}
+
+            {/* <CallUs /> */}
 
             {/* banner */}
-            <Banner/>
+            {/* <Banner/> */}
 
             {/* featured */}
-            <Featured />
+            {/* <Featured /> */}
 
             {/* testimonials */}
-            <Testimonials />
+            {/* <Testimonials /> */}
 
             {/* whyUs */}
-            <WhyUs />
+            {/* <WhyUs /> */}
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

@@ -37,3 +37,19 @@
     /* width: 60%;
     height: 5%; */
 }
+
+@media screen and (max-width: 1000px){
+    .carCardButton{
+        font-size: 2vw;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .carCardButton{
+        font-size: 5vw;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

@@ -1,5 +1,5 @@
 import '../styles/Footer.css';
-import airportMap from '../assets/AtoB.png';
+import airportMap from '../assets/AirportMap.png';
 import logo from '../assets/AtoB-removebg-preview.png';
 
 import clockIcon from '../assets/clock_icon_2.png';
@@ -50,13 +50,15 @@ const Footer = () => {
                     <div>
                         <img className='FooterImageContainer3' src={facebookIcon}></img>
                     </div>
-                    <span>https://www.facebook.com/</span>
+                    {/* <span>https://www.facebook.com/</span> */}
+                    <span><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></span>
                 </div>
                 <div className='FooterInfoColLine'>
                     <div>
                         <img className='FooterImageContainer3' src={instagramIcon}></img>
                     </div>
-                    <span>https://www.instagram.com/</span>
+                    {/* <span>https://www.instagram.com/</span> */}
+                    <span><a href="https://www.instagram.com/atobrentalsutah?igsh=eWszbncza2ZjZnZu" target="_blank" rel="noopener noreferrer">Instagram</a></span>
                 </div>
                 <div className='FooterInfoColLine'>
                     <div>

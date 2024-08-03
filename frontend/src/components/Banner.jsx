@@ -14,7 +14,7 @@ import carStock5 from '../assets/carStock5.jpg';
 import AtoBCar1 from '../assets/AtoBCar1.jpg';
 import AtoBCar2 from '../assets/AtoBCar2.png';
 import AtoBCar3 from '../assets/yaris_adjusted.png';
-import womanStock from '../assets/woman_stock_photo.jpg';
+import womanStock from '../assets/personStock1.jpg';
 import leftArrow from '../assets/left_arrow.png';
 import rightArrow from '../assets/right_arrow.png';
 import smileIcon from '../assets/smile_transparent.png';
